@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface MyComponent {
+        "disabled": boolean;
         /**
           * The first name
          */
@@ -34,6 +35,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface MyComponent {
+        "disabled"?: boolean;
         /**
           * The first name
          */

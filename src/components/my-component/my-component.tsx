@@ -5,8 +5,11 @@ import { format } from '../../utils/utils';
   tag: 'my-component',
   styleUrl: 'my-component.css',
   shadow: true,
+  formAssociated: true,
 })
 export class MyComponent {
+  @Prop() disabled: boolean;
+
   /**
    * The first name
    */
